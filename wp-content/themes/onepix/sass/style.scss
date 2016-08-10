@@ -8,7 +8,7 @@ $master-color: #202020;
 $lr-padding: 0px 15px;
 $tb-margin: 15px 0px;
 $tb-padding:15px 0px;
-$big-title:36px;
+$big-title: 36px;
 $common-size:15px;
 $border-color: 1px solid rgb(236, 244, 251);
 
@@ -35,7 +35,6 @@ header #top_header{
 
 	a{
 		text-decoration: none;
-		color: $master-color;
 		display: block;
 		padding: $small-link-padding;
 		font-size: $link-size;
@@ -47,9 +46,21 @@ header #top_header{
 header .logo{
 	text-align: center;
 	margin: $master-margin;
+	font-family: 'Oxygen', sans-serif;
+	
+	h1{
+		font-size: $big-title;
+		margin: $tb-margin;
+		
+		a{
+			text-decoration:none;
+			font-weight:bold;
+			color: $top-header-bg;
+		}
+	}
 	
 	img{
-		width:100px;
+		max-width:240px;
 	}
 
 }
@@ -79,7 +90,7 @@ header .logo{
 				}
 		}
 
-		h1.title{
+		.title{
 			font-size: $big-title;
 			text-align: center;
 			font-weight: bold;
