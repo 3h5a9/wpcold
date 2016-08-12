@@ -1,8 +1,5 @@
-<?php get_header(); ?>
-	<div id="container">
-		<section id="main_content">
-			
-				<?php if ( have_posts() ) :
+<section id="left_content">
+<?php if ( have_posts() ) :
     			while ( have_posts() ) : the_post(); ?>
     				<article class="article">
     					
@@ -12,8 +9,6 @@
 					<?php endwhile;
 					endif; 
 				?>
-			
-		</section>
-	</div>
-	
-<?php get_footer(); ?>
+</section>
+
+<?php get_sidebar(); ?>

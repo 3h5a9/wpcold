@@ -45,5 +45,36 @@
   ) );
   
   
+  // Sidebar Functions
+  
+  function opm_widget_setup(){
+    register_sidebar(array(
+      
+      'name' => 'Sidebar',
+      'ID'   => 'Sidebar-1',
+      'class'=> 'custom',
+      'description' => 'Top Sidebar',
+      'before_widget' => '<li id="%1$s" class="widget %2$s">',
+      'after_widget' => "</li>\n",
+      'before_title' => '<h2 class="widgettitle">',
+      'after_title' => "</h2>\n",
+      )
+    );
+    register_sidebar(array(
+      
+      'name' => 'Sidebar',
+      'ID'   => 'Sidebar-2',
+      'class'=> 'custom',
+      'description' => 'Middle Sidebar',
+      'before_widget' => '<li id="%1$s" class="widget %2$s">',
+      'after_widget' => "</li>\n",
+      'before_title' => '<h2 class="widgettitle">',
+      'after_title' => "</h2>\n",
+      )
+    );
+  }
+  
+  add_action('widgets_init', 'opm_widget_setup')
+  
 
 ?>

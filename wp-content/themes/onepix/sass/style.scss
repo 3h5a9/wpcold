@@ -3,6 +3,7 @@ $master-padding: 1.5em 1em;
 $small-link-padding: 10px;
 $big-link-padding: 15px 10px;
 $link-size: 13px;
+$link-color: #754abb;
 $master-margin: 2em;
 $master-color: #202020;
 $lr-padding: 0px 15px;
@@ -20,7 +21,7 @@ $border-color: 1px solid rgb(236, 244, 251);
 
 header#main_header{
 	overflow: hidden;
-	margin-bottom: $master-margin;
+	// margin-bottom: $master-margin;
 }
 
 header #top_header{
@@ -190,6 +191,56 @@ footer#main_footer{
 	}
 
 }
+
+
+/*==============================
+		front page styling
+==============================*/ 
+
+#home_page_content{
+	overflow:hidden;
+	padding: 0px 1em 1.5em 1em;
+	
+	#left_content{
+		float: right;
+    width: 614px;
+    background: #b9b9b9;
+    padding: $master-padding;
+		}
+	
+	#sidebar{
+		float: left;
+    width: 250px;
+    overflow: hidden;
+    background: #eee;
+    padding: $master-padding;
+    font-family: 'Oxygen', sans-serif;
+    
+    li{
+    	list-style:none;
+    	margin-bottom: 1.5em;
+    	h2{
+    		font-size: 22px;
+		    margin-bottom: 5px;
+		    border-bottom: 1px solid #eae5e5;
+		    padding-bottom: 5px;
+    	}
+    	li{
+    		margin-bottom:5px;
+    		a{
+	    		text-decoration:none;
+	    		display:block;
+	    		font-size: $common-size;
+	    		color: $link-color;
+	    		padding:5px 0px;
+    		}
+    	}
+    	
+    }
+    
+  }
+}
+
 
 
 @import 'css/reset.css';

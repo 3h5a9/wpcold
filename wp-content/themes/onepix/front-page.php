@@ -1,14 +1,18 @@
-<?php get_header(); ?>
+<?php
+
+/*
+  Template Name: Front Page
+*/ 
+
+get_header(); ?>
 	<div id="container">
-		<section id="main_content">
+		<section id="home_page_content">
 			
 				<?php if ( have_posts() ) :
     			while ( have_posts() ) : the_post(); ?>
-    				<article class="article">
     					
-							<?php get_template_part('content', get_post_format() ); ?>
+							<?php get_template_part('templates/home-page', get_post_format() ); ?>
 						
-						</article>
 					<?php endwhile;
 					endif; 
 				?>

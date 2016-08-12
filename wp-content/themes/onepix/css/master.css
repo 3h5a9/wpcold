@@ -5,8 +5,7 @@
   margin: 0 auto; }
 
 header#main_header {
-  overflow: hidden;
-  margin-bottom: 2em; }
+  overflow: hidden; }
 
 header #top_header {
   background-color: #2196F3;
@@ -118,5 +117,40 @@ footer#main_footer {
       font-size: 13px;
       line-height: 32px;
       text-align: center; }
+
+/*==============================
+		front page styling
+==============================*/
+#home_page_content {
+  overflow: hidden;
+  padding: 0px 1em 1.5em 1em; }
+  #home_page_content #left_content {
+    float: right;
+    width: 614px;
+    background: #b9b9b9;
+    padding: 1.5em 1em; }
+  #home_page_content #sidebar {
+    float: left;
+    width: 250px;
+    overflow: hidden;
+    background: #eee;
+    padding: 1.5em 1em;
+    font-family: 'Oxygen', sans-serif; }
+    #home_page_content #sidebar li {
+      list-style: none;
+      margin-bottom: 1.5em; }
+      #home_page_content #sidebar li h2 {
+        font-size: 22px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #eae5e5;
+        padding-bottom: 5px; }
+      #home_page_content #sidebar li li {
+        margin-bottom: 5px; }
+        #home_page_content #sidebar li li a {
+          text-decoration: none;
+          display: block;
+          font-size: 15px;
+          color: #754abb;
+          padding: 5px 0px; }
 
 /*# sourceMappingURL=master.css.map */
